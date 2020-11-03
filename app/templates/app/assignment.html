@@ -1,0 +1,50 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
+<style>
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+
+    a {
+        align: center;
+    }
+</style>
+
+<title>Assignment Details: {{ assignment.name }}</title>
+<h1>Assignment Details: {{ assignment.name }}</h1>
+
+<table>
+    <tr>
+        <th>Teacher</th>
+        <th>Subject</th>
+        <th>Description</th>
+        <th>Creation Date</th>
+        <th>Due Date</th>
+        <th>Time Left</th>
+    </tr>
+    <tr>
+        <th>{{ assignment.teacher }}</th>
+        <th>{{ assignment.subject }}</th>
+        <th>{{ assignment.description }}</th>
+        <th>{{ assignment.pub_date }}</th>
+        <th>{{ assignment.due_date }}</th>
+        <th>{{ diff }}</th>
+    </tr>
+</table>
+
+<p>Last Updated Time: {{ now }}</p>
+<p><a href="{% url 'app:index' %}">Homepage</p>

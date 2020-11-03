@@ -1,0 +1,26 @@
+{% load static %}
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
+<style>
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .studentlist {
+    font-size: x-large;
+  }
+</style>
+
+<title>HWK Planner</title>
+
+{% if student_list %}
+    <h1>Please select your name from the list below:</h1>
+    <ul>
+    {% for student in student_list %}
+		<li class="studentlist"><a href="{% url 'app:student' student.id %}">{{ student.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No students are available.</p>
+{% endif %}

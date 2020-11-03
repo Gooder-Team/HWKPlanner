@@ -1,0 +1,18 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
+<style>
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+</style>
+
+<title>{{ student_name }}</title>
+<h1>Welcome, {{ student_name }}!</h1>
+<h2>Your assignments are:</h2>
+<ul>
+{% for task in assignment_list %}
+    <li><a href="{% url 'app:assignment' task.id %}">{{ task.name }} - {{ task.subject }} by {{ task.teacher }}</a></li>
+{% endfor %}
+</ul>
+
+<p>Click on an assignment for more info!</p>
