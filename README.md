@@ -2,14 +2,14 @@
 
 ### HWKPlanner is a Django-based application that you can integrate with your Django project. It was made for the Oct-Nov 2020 Timathon Code Jam. It allows the setting of assignments and allows students to view them. Its database integration allows for it to store students, teachers and assignments.
 
-### By the Good Team 
-### KingWaffleIII (Integration with Django), Dan (Conceptual Design), QuantumFox (Moral Support), Code-Tap (Moral Support)
+### By the Good Team:
+### KingWaffleIII (Integration with Django and README.md author), Dan (Conceptual Design and Error Checking), QuantumFox (Moral Support and Bug Testing), Code-Tap (Moral Support)
 
 ## HWKPLANNER SELF DEPLOYMENT GUIDE
 
 **(last edited 3rd November 2020, please note that depending on when you are viewing this guide, some information may be outdated)**
 
-*Note: we are using the Django built-in web server which **IS NOT RECOMMENDED**. This server is meant for development purposes and is not built with development in mind. In this guide, we configure the server to allow connections from the LAN (local access network which simply means whoever is connected to your Wi-Fi/router) and not from outside your LAN.  If you want users outside of your LAN to be able to use this application, consider using a host such as Heroku for security. A useful guide can be found here: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Deployment.*
+*Note: we are using the Django built-in web server which **IS NOT RECOMMENDED**. This server is meant for development purposes and is not built with security in mind. In this guide, we configure the server to allow connections from the LAN (local access network which simply means whoever is connected to your Wi-Fi/router) and not from outside your LAN.  If you want users outside of your LAN to be able to use this application, consider using a host such as Heroku for security. A useful guide can be found here: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Deployment.*
 
 **If you have any issues, please make sure you read the step(s) correctly and if it still doesn’t work, feel free to create an issue on the GitHub repo.
 
